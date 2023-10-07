@@ -8,8 +8,14 @@
 <body style="background-image:url('./images/BgImg.jpg'); background-size: 100%; background-position: center;">
     <%- include('partials/header') %>
 
+    <div style="text-align: center; padding-bottom: 0%; background-color: white;">
+      <h1>Contact Me</h1>
+    </div>
+
     <!-- Form -->
     <form style="background-color: aliceblue; width:50%; margin-left:25%; margin-top: 10%; padding: 1%; border-radius: 10px; " action="/submit" method="POST">
+
+      
 
         <!-- Row for first and last name boxes-->
         <div class="row">
@@ -42,6 +48,15 @@
 
             <!--Submit btn-->
             <button type="submit" class="btn btn-primary" style="background-color: black;">Submit</button>
+            
+            <!--Read only contact information-->
+            <div class="form-group row">
+              <label for="staticEmail" class="col-sm-2 col-form-label">Contact me  :</label>
+              <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="chandupanr03@gmail.com">
+              </div>
+            </div>
+
           </form>
 </body>
 </html>
