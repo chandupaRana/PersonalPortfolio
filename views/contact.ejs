@@ -7,5 +7,42 @@
 </head>
 <body>
     <%- include('partials/header') %>
+
+    <!-- Form -->
+    <form style="background-color: aliceblue; width:50%; margin-left:25%; margin-top: 7%; padding: 1%">
+
+        <!-- Row for first and last name boxes-->
+        <div class="row">
+
+            <!--First name box-->
+            <div class="col">
+              <input type="text" class="form-control" id="lastName" placeholder="First name">
+            </div>
+
+            <!--Last name box-->
+            <div class="col">
+              <input type="text" class="form-control" id="firstName" placeholder="Last name">
+            </div>
+        </div>   
+
+            <!-- Email box -->
+            <div class="form-group" style="padding-top: 2%;">
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+
+            <!-- Contact Number -->
+            <div class="form-group" style="padding-top: 2%;">
+              <input type="password" class="form-control" id="contact" placeholder="Contact Number">
+            </div>
+            
+            <!-- Text Area -->
+            <div class="form-group" style="padding-top: 2%; padding-bottom: 2%;">
+                <textarea class="form-control" id="message" rows="3" placeholder="Message (optional)"></textarea>
+              </div>
+
+            <!--Submit btn-->
+            <button type="submit" class="btn btn-primary" href="/about">Submit</button>
+          </form>
+          <script src="script/script.js"></script>
 </body>
 </html>

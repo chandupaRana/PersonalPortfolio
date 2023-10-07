@@ -22,4 +22,6 @@ router.get('/services', (req, res)=> {
 router.get('/contact', (req, res)=> {
   res.render('contact', { title: 'Contact'})
 })
+
+
 module.exports = router;
