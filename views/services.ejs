@@ -7,9 +7,34 @@
 </head>
 <body style="background-image:url('./images/BgImg.jpg'); background-size: 100%; background-position: center; background-repeat: no-repeat;">
     <%- include('partials/header') %>
-    <div style="text-align: center; padding-bottom: 0%; background-color: white;">
-      <h1>Projects</h1>
+
+    <!--Top heading -->
+    <div style="text-align: center; padding-bottom: 0%; background-color: white; margin-bottom: 13%;">
+      <h1>Services</h1>
     </div>
-    
+
+    <!--Service description-->
+    <div class="card mb-3" style="width: 55%; margin-left: 22%;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img
+            src="./images/ServiceImg.jpg"
+            alt="Image"
+            style="width: 100%;"
+            class="img-fluid rounded-start"
+             />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <p class="card-text">
+              <br>Due to my field of study I have the abiltity to perform a wide array of services. Software development, web development, programming and much more.
+        Having all these skills, I meet the diverse needs of businesses and organizations. Having said all that, eventhough I am able perform all these tasks,
+        I seem to excel in programming. C#, java whatever language, I will be able to create high quality code.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include('partials/footer') %>
 </body>
 </html>
