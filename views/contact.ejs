@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
 </head>
-<body>
+<body style="background-image:url('./images/BgImg.jpg'); background-size: 100%; background-position: center;">
     <%- include('partials/header') %>
 
     <!-- Form -->
-    <form style="background-color: aliceblue; width:50%; margin-left:25%; margin-top: 7%; padding: 1%">
+    <form style="background-color: aliceblue; width:50%; margin-left:25%; margin-top: 10%; padding: 1%; border-radius: 10px; " action="/submit" method="POST">
 
         <!-- Row for first and last name boxes-->
         <div class="row">
@@ -27,7 +27,7 @@
 
             <!-- Email box -->
             <div class="form-group" style="padding-top: 2%;">
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+              <input type="email" class="form-control" id="email" placeholder="Enter email">
             </div>
 
             <!-- Contact Number -->
@@ -41,8 +41,7 @@
               </div>
 
             <!--Submit btn-->
-            <button type="submit" class="btn btn-primary" href="/about">Submit</button>
+            <button type="submit" class="btn btn-primary" style="background-color: black;">Submit</button>
           </form>
-          <script src="script/script.js"></script>
 </body>
 </html>
