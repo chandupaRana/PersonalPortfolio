@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
 </head>
-<body>
+<body style="background-image:url('./images/BgImg.jpg'); background-size: 100%; background-position: center;">
     <%- include('partials/header') %>
+
+    <!-- Form -->
+    <form style="background-color: aliceblue; width:50%; margin-left:25%; margin-top: 10%; padding: 1%; border-radius: 10px; " action="/submit" method="POST">
+
+        <!-- Row for first and last name boxes-->
+        <div class="row">
+
+            <!--First name box-->
+            <div class="col">
+              <input type="text" class="form-control" id="lastName" placeholder="First name">
+            </div>
+
+            <!--Last name box-->
+            <div class="col">
+              <input type="text" class="form-control" id="firstName" placeholder="Last name">
+            </div>
+        </div>   
+
+            <!-- Email box -->
+            <div class="form-group" style="padding-top: 2%;">
+              <input type="email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+
+            <!-- Contact Number -->
+            <div class="form-group" style="padding-top: 2%;">
+              <input type="password" class="form-control" id="contact" placeholder="Contact Number">
+            </div>
+            
+            <!-- Text Area -->
+            <div class="form-group" style="padding-top: 2%; padding-bottom: 2%;">
+                <textarea class="form-control" id="message" rows="3" placeholder="Message (optional)"></textarea>
+              </div>
+
+            <!--Submit btn-->
+            <button type="submit" class="btn btn-primary" style="background-color: black;">Submit</button>
+          </form>
 </body>
 </html>
